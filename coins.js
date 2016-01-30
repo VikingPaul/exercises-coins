@@ -1,44 +1,19 @@
-// /*
-//   Input: 0.67
-//   Output:
-//   {
-//     quarters: 2,
-//     dimes: 1,
-//     nickels: 1,
-//     pennies: 2
-//   }
-
-// */
-
-// function coinCounter () {
-//   // Initialize a JavaScript object to hold the coins
-//   var coinPurse = {};
-
-//   coinPurse.quarters = 0;
-
-//   return coinPurse;
-// }
-
-// var coins = coinCounter()
-// console.log();
+var coinPurse = {}
 
 var curent
-var coinArray
 var count
-
+var idk = 0
 
 
   function currentcoin() {
+    idk = 0
     while(total >= current) {
-      console.log("total before subtracting", total);
       total = total - current
-      coinArray[count] += 1
-      console.log("total left", total);
-    }
+      idk += 1
+      }
   }
 
   current = 25
-  coinArray = [0,0,0,0]
   count = 0
   var total = prompt("How much monies?")
   
@@ -46,14 +21,15 @@ var count
 
   currentcoin()
   
-  count ++
+  coinPurse.quarters = idk
   current = 10
   currentcoin()
-  count ++
+  coinPurse.dimes = idk
   current = 05
   currentcoin()
-  count ++
+  coinPurse.nickels = idk
   current = 01
   currentcoin()
+  coinPurse.pennies = idk
 
-  alert(coinArray[0] + " Quarters " + coinArray[1] + " Dimes " + coinArray[2] + " Nickels " + coinArray[3] + " Pennies ")
+  console.log(coinPurse)
